@@ -1,3 +1,6 @@
+package com.example;
+
+import com.example.util.StringUtil;
 import java.util.Scanner;
 
 public class Main {
@@ -5,7 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
 
-        LetterReverser letterReverser = new LetterReverser();
-        System.out.println(letterReverser.reverseString(str));
+        StringUtil stringUtil = new StringUtil();
+        System.out.println(stringUtil.reverseLetters(str));
     }
 }
