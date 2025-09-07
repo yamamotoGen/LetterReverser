@@ -1,0 +1,20 @@
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+.idea/
+*.iml
+
+# Compiled classes
+*.class
+
+# Build outputs
+target/
+build/
+out/
+
+# Logs
+*.log
+
+### Mac OS ###
+.DS_Store
