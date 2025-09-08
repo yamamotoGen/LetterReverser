@@ -1,12 +1,11 @@
 package com.example.util;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class StringUtilTest {
-    StringUtil stringUtil = new StringUtil();;
+    private final StringUtil stringUtil = new StringUtil();
 
     @Test
     void reverseLetters_shouldReturnEmptyString_ifContainsNull() {
