@@ -13,13 +13,16 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <main.class>com.example.Main</main.class>
+        <junit.version>5.13.4</junit.version>
+        <maven.compiler.version>3.14.0</maven.compiler.version>
+        <maven.surefire.version>3.5.3</maven.surefire.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.13.4</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -30,12 +33,12 @@
                 <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
-                        <version>3.5.3</version>
+                        <version>${maven.surefire.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.14.0</version>
+                    <version>${maven.compiler.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>

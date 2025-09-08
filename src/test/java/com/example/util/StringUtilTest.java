@@ -6,12 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class StringUtilTest {
-    StringUtil stringUtil;
-
-    @BeforeEach
-    void setUp() {
-        stringUtil = new StringUtil();
-    }
+    StringUtil stringUtil = new StringUtil();;
 
     @Test
     void reverseLetters_shouldReturnEmptyString_ifContainsNull() {
@@ -41,8 +36,8 @@ class StringUtilTest {
 
     @Test
     void reverseLetters_shouldReverseLetters_ifContainsHasOnlyOneLetterWithSpaces() {
-        assertEquals(" A   ", stringUtil.reverseLetters("   A "));
-        assertEquals("A   ", stringUtil.reverseLetters("   A"));
+        assertEquals(" A  a ", stringUtil.reverseLetters(" a  A "));
+        assertEquals(" A  a", stringUtil.reverseLetters(" a  A"));
     }
 
 }
